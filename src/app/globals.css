@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@xkintaro/aether-theme';
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  button,
+  input,
+  a {
+    @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring;
+  }
+
+  input {
+    accent-color: var(--primary);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-width: 320px;
+}
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.workbench-grid {
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.mc-pixel-icon {
+  image-rendering: pixelated;
+}
