@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import { Anvil, BookOpen, Check, RotateCcw, Sparkles } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useEnchantCalculator } from '@/lib/minecraft/useEnchantCalculator';
@@ -16,6 +17,13 @@ import { SourceNotice } from '@/components/source-notice';
 export default function EnchantCalculator() {
   const t = useTranslations('ui');
   const calculator = useEnchantCalculator();
+  const resultsPanelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (calculator.result && resultsPanelRef.current) {
+      resultsPanelRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [calculator.result]);
   const enchantmentGroups = calculator.item
     ? getEnchantmentGroups(getApplicableEnchantments(calculator.item))
     : [];
@@ -80,7 +88,7 @@ export default function EnchantCalculator() {
               disabled={calculator.isCalculating}
             />
           </div>
-          <div className="min-w-0 md:col-span-2 min-[75rem]:sticky min-[75rem]:top-5 min-[75rem]:col-span-1">
+          <div ref={resultsPanelRef} className="min-w-0 scroll-mt-5 md:col-span-2 min-[75rem]:sticky min-[75rem]:top-5 min-[75rem]:col-span-1">
             <ResultsPanel
               result={calculator.result}
               currentItem={calculator.item}
