@@ -20,10 +20,12 @@
 ![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
   <p>
     <a href="#demo">Demo</a> •
     <a href="#info">Bilgi</a> •
+    <a href="#about">Hakkında</a> •
     <a href="#features">Özellikler</a> •
     <a href="#tech">Teknolojiler</a> •
     <a href="#setup">Kurulum</a> •
@@ -38,11 +40,17 @@
 
 - [https://minecraft-enchant-order-six.vercel.app](https://minecraft-enchant-order-six.vercel.app)
 
-## <a id="info"></a> 📋 Bilgi
+## <a id="info"></a> 📌 Bilgi
 
 Bu site, Cal Henderson’ın (iamcal) enchant-order projesinin bir kopyasıdır. Büyü sıralama mantığı ve algoritmaların tamamı özgün projeden alınmıştır. [iamcal/enchant-order](https://github.com/iamcal/enchant-order)
 
 Daha iyi görünen ve kullanımı daha kolay bir arayüz sunmak için bu sürümü tamamen yapay zekâyla yeniden geliştirdik. Hesaplama mantığı özgün projenin geliştiricilerine aittir. Çalışmalarını paylaştıkları için kendilerine teşekkür ederiz.
+
+## <a id="about"></a> 📋 Hakkında
+
+**Minecraft Enchant Order**, Minecraft Java Edition için bir örs planlayıcısıdır. Daha önce örste işlem görmemiş, büyüsüz bir eşya seçerek başla. Ardından eşyaya uygulamak istediğin büyüleri ve seviyelerini belirle. Hesaplayıcı, kitapları ne zaman birbiriyle birleştireceğini ve hangi adımda eşyaya uygulayacağını belirler. Toplam seviye maliyetini ya da eşyanın sonraki örs işlemlerini etkileyen önceki işlem cezasını en aza indirmeyi seçebilirsin.
+
+Sonuç, her adımda örsün iki yuvasına ne koyacağını, işlemden ne çıkacağını ve kaç seviye harcayacağını gösterir. Planı oyunda adım adım uygulayabilir veya toplam maliyete bakarak önceden kaç seviye biriktireceğini hesaplayabilirsin. Her işlemi 39 seviye sınırı içinde tutan bir sıra bulunamazsa hesaplayıcı bunu bildirir.
 
 ## <a id="features"></a> ✨ Özellikler
 

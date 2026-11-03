@@ -20,10 +20,12 @@
 ![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
   <p>
     <a href="#demo">Demo</a> •
     <a href="#info">Info</a> •
+    <a href="#about">About</a> •
     <a href="#features">Features</a> •
     <a href="#tech">Tech</a> •
     <a href="#setup">Setup</a> •
@@ -38,11 +40,17 @@
 
 - [https://minecraft-enchant-order-six.vercel.app](https://minecraft-enchant-order-six.vercel.app)
 
-## <a id="info"></a> 📋 Info
+## <a id="info"></a> 📌 Info
 
 This site is a copy of Cal Henderson’s (iamcal) enchant-order project. All of the enchantment ordering logic and algorithms were taken from that project. [iamcal/enchant-order](https://github.com/iamcal/enchant-order)
 
 We rebuilt this version entirely with AI to give it a better-looking, easier-to-use interface. Credit for the calculation logic belongs to the original project’s developers. Thanks to them for sharing their work.
+
+## <a id="about"></a> 📋 About
+
+**Minecraft Enchant Order** is an anvil planner for Minecraft Java Edition. Start with an unenchanted item that has never been worked on an anvil, then select the enchantments and levels you want to apply. The calculator works out when to combine books with each other and when to apply them to the item. You can optimize for the total number of levels spent or for the prior work penalty left on the finished item, which affects the cost of later anvil work.
+
+The result lists what goes into each anvil slot, what comes out, and how many levels the step costs. You can follow the plan in-game one step at a time or use the total cost to plan how many levels to gather in advance. If the calculator cannot find a sequence that keeps every operation within 39 levels, it reports that no valid order was found.
 
 ## <a id="features"></a> ✨ Features
 
