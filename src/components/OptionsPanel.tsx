@@ -125,7 +125,7 @@ export function OptionsPanel({
         initialFocus={false}
         finalFocus={false}
         aria-modal={false}
-        className="border-t bg-card shadow-[0_-12px_50px_-20px_var(--border)] [--drawer-content-max-height:100dvh]"
+        className="border-t bg-card [--drawer-content-max-height:100dvh]"
       >
         <DrawerTitle className="sr-only">{t('ui.settings')}</DrawerTitle>
         <div

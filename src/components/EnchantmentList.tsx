@@ -51,7 +51,7 @@ export function EnchantmentList({
     .sort((left, right) => Number(right.isConflicting) - Number(left.isConflicting));
 
   return (
-    <Card className="gap-0 py-5">
+    <Card className="relative isolate gap-0 py-5">
       <CardHeader className="px-5 pb-5">
         <SectionHeading
           number="02"
@@ -141,9 +141,18 @@ export function EnchantmentList({
           ))}
         </div>
         {!hasItem && (
-          <p role="status" className="py-10 text-center text-xs text-muted-foreground">
-            {t('ui.selectItemToStart')}
-          </p>
+          <div className="min-[75rem]:flex min-[75rem]:min-h-60 min-[75rem]:items-start min-[75rem]:justify-end min-[75rem]:pt-14 min-[75rem]:pr-48">
+            <p
+              role="status"
+              className="py-10 text-center text-xs text-muted-foreground min-[75rem]:relative min-[75rem]:max-w-64 min-[75rem]:rounded-xl min-[75rem]:border min-[75rem]:border-border min-[75rem]:bg-muted min-[75rem]:px-4 min-[75rem]:py-3 min-[75rem]:leading-relaxed min-[75rem]:text-foreground min-[75rem]:after:absolute min-[75rem]:after:top-1/2 min-[75rem]:after:-right-1.5 min-[75rem]:after:size-3 min-[75rem]:after:-translate-y-1/2 min-[75rem]:after:rotate-45 min-[75rem]:after:border-t min-[75rem]:after:border-r min-[75rem]:after:border-border min-[75rem]:after:bg-muted"
+            >
+              {t('ui.selectItemToStart')}
+            </p>
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute right-16 bottom-4 -z-10 hidden size-56 bg-[url('/mascot.webp')] bg-contain bg-right-bottom bg-no-repeat min-[75rem]:block"
+            />
+          </div>
         )}
         {hasItem && groups.length === 0 && (
           <p role="status" className="py-10 text-center text-xs text-muted-foreground">
