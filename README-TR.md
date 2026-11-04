@@ -24,7 +24,7 @@
 
   <p>
     <a href="#demo">Demo</a> •
-    <a href="#info">Bilgi</a> •
+    <a href="#info">Bilgilendirme</a> •
     <a href="#about">Hakkında</a> •
     <a href="#features">Özellikler</a> •
     <a href="#tech">Teknolojiler</a> •
@@ -40,7 +40,7 @@
 
 - [https://minecraft-enchant-order-six.vercel.app](https://minecraft-enchant-order-six.vercel.app)
 
-## <a id="info"></a> 📌 Bilgi
+## <a id="info"></a> 📌 Bilgilendirme
 
 Bu site, Cal Henderson’ın (iamcal) enchant-order projesinin bir kopyasıdır. Büyü sıralama mantığı ve algoritmaların tamamı özgün projeden alınmıştır. [iamcal/enchant-order](https://github.com/iamcal/enchant-order)
 
@@ -71,28 +71,26 @@ Sonuç, her adımda örsün iki yuvasına ne koyacağını, işlemden ne çıkac
 
 ### Adım Adım Kurulum
 
-Projeyi yerel ortamında çalıştırmak için aşağıdaki adımları izle.
-
-1. **Depoyu klonla**
+1. **Depoyu klonlayın**
 
    ```bash
    git clone https://github.com/xkintaro/minecraft-enchant-order.git
    cd minecraft-enchant-order
    ```
 
-2. **Bağımlılıkları yükle**
+2. **Bağımlılıkları yükleyin**
 
    ```bash
    npm install
    ```
 
-3. **Geliştirme sunucusunu başlat**
+3. **Geliştirme sunucusunu başlatın**
 
    ```bash
    npm run dev
    ```
 
-Arayüzü tarayıcında aç. [http://localhost:3000](http://localhost:3000)
+Uygulamayı şu adreste açın: [http://localhost:3000](http://localhost:3000).
 
 ## <a id="license"></a> 📄 Lisans
 
