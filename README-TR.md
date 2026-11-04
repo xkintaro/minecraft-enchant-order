@@ -101,5 +101,5 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 #
 
 <p align="center">
-  <sub>❤️ Geliştiren "Mustafa TAŞAL" (kintaro)</sub>
+  <sub>❤️ Developed by "Mustafa TAŞAL" (kintaro)</sub>
 </p>
