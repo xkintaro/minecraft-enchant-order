@@ -54,10 +54,10 @@ The result lists what goes into each anvil slot, what comes out, and how many le
 
 ## <a id="features"></a> ✨ Features
 
-- **Enchantment selection.** Choose an item and the enchantments and levels you want to apply.
-- **Two optimization targets.** Minimize the total level cost or the prior work penalty.
-- **Step-by-step anvil plan.** See which items and books to combine, in what order, and how many levels each step costs.
-- **Language and theme options.** Choose your interface language and switch between light and dark themes.
+- **Enchantment selection**: Choose an item and the enchantments and levels you want to apply.
+- **Two optimization targets**: Minimize the total level cost or the prior work penalty.
+- **Step-by-step anvil plan**: See which items and books to combine, in what order, and how many levels each step costs.
+- **Language and theme options**: Choose your interface language and switch between light and dark themes.
 
 ## <a id="tech"></a> 🛠️ Tech
 
@@ -90,7 +90,7 @@ The result lists what goes into each anvil slot, what comes out, and how many le
    npm run dev
    ```
 
-Open the app in your browser. [http://localhost:3000](http://localhost:3000)
+Open the app at [http://localhost:3000](http://localhost:3000).
 
 ## <a id="license"></a> 📄 License
 

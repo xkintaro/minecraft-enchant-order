@@ -48,16 +48,16 @@ Daha iyi görünen ve kullanımı daha kolay bir arayüz sunmak için bu sürüm
 
 ## <a id="about"></a> 📋 Hakkında
 
-**Minecraft Enchant Order**, Minecraft Java Edition için bir örs planlayıcısıdır. Daha önce örste işlem görmemiş, büyüsüz bir eşya seçerek başla. Ardından eşyaya uygulamak istediğin büyüleri ve seviyelerini belirle. Hesaplayıcı, kitapları ne zaman birbiriyle birleştireceğini ve hangi adımda eşyaya uygulayacağını belirler. Toplam seviye maliyetini ya da eşyanın sonraki örs işlemlerini etkileyen önceki işlem cezasını en aza indirmeyi seçebilirsin.
+**Minecraft Enchant Order**, Minecraft Java Edition için bir örs planlayıcısıdır. Daha önce örste işlem görmemiş, büyüsüz bir eşya seçerek başlayın. Ardından eşyaya uygulamak istediğiniz büyüleri ve seviyelerini belirleyin. Hesaplayıcı, kitapların ne zaman birbiriyle birleştirileceğini ve hangi adımda eşyaya uygulanacağını belirler. Toplam seviye maliyetini ya da eşyanın sonraki örs işlemlerini etkileyen önceki işlem cezasını en aza indirmeyi seçebilirsiniz.
 
-Sonuç, her adımda örsün iki yuvasına ne koyacağını, işlemden ne çıkacağını ve kaç seviye harcayacağını gösterir. Planı oyunda adım adım uygulayabilir veya toplam maliyete bakarak önceden kaç seviye biriktireceğini hesaplayabilirsin. Her işlemi 39 seviye sınırı içinde tutan bir sıra bulunamazsa hesaplayıcı bunu bildirir.
+Sonuç, her adımda örsün iki yuvasına ne koyacağınızı, işlemden ne çıkacağını ve kaç seviye harcayacağınızı gösterir. Planı oyunda adım adım uygulayabilir veya toplam maliyete bakarak önceden kaç seviye biriktirmeniz gerektiğini hesaplayabilirsiniz. Her işlemi 39 seviye sınırı içinde tutan bir sıra bulunamazsa hesaplayıcı bunu bildirir.
 
 ## <a id="features"></a> ✨ Özellikler
 
-- **Büyü seçimi.** Eşyanı, uygulamak istediğin büyüleri ve seviyelerini seç.
-- **İki hesaplama hedefi.** Toplam seviye maliyetini veya önceki işlem cezasını en aza indir.
-- **Adım adım örs planı.** Hangi eşya ve kitapları hangi sırayla birleştireceğini ve her adımın maliyetini gör.
-- **Dil ve tema seçenekleri.** Arayüz dilini ve açık ya da koyu temayı seç.
+- **Büyü seçimi**: Eşyanızı, uygulamak istediğiniz büyüleri ve seviyelerini seçin.
+- **İki hesaplama hedefi**: Toplam seviye maliyetini veya önceki işlem cezasını en aza indirin.
+- **Adım adım örs planı**: Hangi eşya ve kitapları hangi sırayla birleştireceğinizi ve her adımın maliyetini görün.
+- **Dil ve tema seçenekleri**: Arayüz dilini ve açık ya da koyu temayı seçin.
 
 ## <a id="tech"></a> 🛠️ Teknolojiler
 
