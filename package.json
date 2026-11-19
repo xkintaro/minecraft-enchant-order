@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
-    "@xkintaro/aether-theme": "github:xkintaro/aether#v0.1.0",
+    "@xkintaro/aether-theme": "github:xkintaro/aether#7ca5f3dffc8a45873b18fb2e843b0f8a9158c914",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.66.0",
