@@ -5,16 +5,15 @@ import { Trash2 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from '@/components/ui/alert-dialog';
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 
 export function ClearEnchantmentsButton({
   count,
@@ -32,9 +31,9 @@ export function ClearEnchantmentsButton({
   const cancelRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <AlertDialog open={open} onOpenChange={setOpen}>
+    <Dialog open={open} onOpenChange={setOpen}>
       {count > 0 && (
-        <AlertDialogTrigger
+        <DialogTrigger
           render={<Button variant="ghost" size="icon-sm" />}
           disabled={disabled}
           aria-label={t('clearSelection')}
@@ -42,16 +41,25 @@ export function ClearEnchantmentsButton({
           className="text-destructive hover:bg-destructive/10 hover:text-destructive"
         >
           <Trash2 aria-hidden="true" className="size-3.5" />
-        </AlertDialogTrigger>
+        </DialogTrigger>
       )}
-      <AlertDialogContent initialFocus={cancelRef} finalFocus={returnFocus}>
-        <AlertDialogHeader>
-          <AlertDialogTitle>{t('clearConfirmTitle')}</AlertDialogTitle>
-          <AlertDialogDescription>{t('clearConfirmDescription', { count })}</AlertDialogDescription>
-        </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogCancel ref={cancelRef}>{t('cancelClear')}</AlertDialogCancel>
-          <AlertDialogAction
+      <DialogContent
+        initialFocus={cancelRef}
+        finalFocus={returnFocus}
+        showCloseButton={false}
+        className="max-w-xs sm:max-w-sm"
+      >
+        <DialogHeader className="items-center gap-1.5 text-center sm:items-start sm:text-left">
+          <DialogTitle className="leading-normal">{t('clearConfirmTitle')}</DialogTitle>
+          <DialogDescription className="text-balance md:text-pretty">
+            {t('clearConfirmDescription', { count })}
+          </DialogDescription>
+        </DialogHeader>
+        <DialogFooter>
+          <DialogClose ref={cancelRef} render={<Button variant="outline" />}>
+            {t('cancelClear')}
+          </DialogClose>
+          <Button
             variant="destructive"
             disabled={disabled || count === 0}
             onClick={() => {
@@ -60,9 +68,9 @@ export function ClearEnchantmentsButton({
             }}
           >
             {t('confirmClear')}
-          </AlertDialogAction>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+          </Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
 }
